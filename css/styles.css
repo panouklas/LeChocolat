@@ -28,3 +28,6 @@
     color:floralwhite;
     background-color:#6E3F19 } 
 tr:hover {background-color:#dbb08db0!important}
+.bg-secondary {
+    background-color: #6E3F19 !important;
+  }
