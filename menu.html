@@ -9,7 +9,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/stylesmenu.css" rel="stylesheet">
 
 
 </head>
@@ -26,9 +28,10 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span>
                             Home</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-info fa-lg"></span>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span
+                                class="fa fa-info fa-lg"></span>
                             About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./menu.html"><span class="fa fa-list fa-lg"></span>
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span>
                             Menu</a>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span
@@ -60,18 +63,105 @@
             <li class="breadcrumb-item active" aria-current="page">About us</li>
         </ol>
     </nav>
+    <div id="ReserveSModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
 
-    <section id="our_menu" class="pt-5 pb-5">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times</button>
+                </div>
+                <div class="modal-body">
+                    <div class="card">
+                        <h3 class="card-header bg-secondary " id="reserveForm">Your Order</h3>
+                        <div class="card-body">
+
+                            <form >
+                                <div class="form-group row">
+                                    <label class="col-12 col-sm-3">
+                                        Choose Products
+                                    </label>
+
+                                    <div class="col col-sm">
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="checkbox" id="inline1" name="options"
+                                                value="1">
+                                            <label class="form-check-label" for="inline1">Sweats</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="inline2" name="options"
+                                                value="option2">
+                                            <label class="form-check-label" for="inline2">Choco Icecream</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="inline3" name="options"
+                                                value="option3">
+                                            <label class="form-check-label" for="inline3">Santa Chocolate</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="inline4" name="options"
+                                                value="option4">
+                                            <label class="form-check-label" for="inline4">Cupcakes</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="inline5" name="options"
+                                                value="option5">
+                                            <label class="form-check-label" for="inline5">Choco Mousse</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="inline6" name="options"
+                                                value="option6">
+                                            <label class="form-check-label" for="inline6">Choco Cake</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group row ">
+                                    <label class="col-12 col-sm-3">
+                                        Choose Delivery Options
+                                    </label>
+
+                                    <div class="col-12 col-sm-3 btn-group " role="group">
+
+                                        <label class="btn btn-success">
+                                            <input id="button1" type="radio" name="button" value="option1">
+                                            <label class="form-check-label" for="button1"> Delivery</label>
+                                        </label>
+                                        <label class="btn btn-dark">
+                                            <input id="button2" type="radio" name="button" value="option1">
+                                            <label class="form-check-label" for="button1"> Take Away</label>
+                                        </label>
+                                    </div>
+                                </div>
+
+
+
+                            </form>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel
+                                </button>
+                                <button type="submit" class="btn btn-primary btn-sm">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="our_menu" class="pt-5 pb-5 ">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="page_title text-center mb-4">
-                        <h1>our menu</h1>
+                        <h1>OUR MENU</h1>
                         <div class="single_line"></div>
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row ">
                 <ul class="nav nav-tabs menu_tab mb-4" id="myTab" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" id="breakfast-tab" data-toggle="tab" href="#breakfast"
@@ -81,44 +171,44 @@
                         <a class="nav-link" id="lunch-tab" data-toggle="tab" href="#lunch" role="tab">Offers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="dinner-tab" data-toggle="tab" href="#dinner" role="tab">New Entries</a>
+                        <a class="nav-link" id="dinner-tab" data-toggle="tab" href="#dinner" role="tab">Seasonal</a>
                     </li>
                 </ul>
             </div>
-            <div class="row">
-                <div class="tab-content col-lg-12" id="myTabContent">
+            <div class="row ">
+                <div class="tab-content col-lg-12 bg-secondary " id="myTabContent">
                     <div class="tab-pane fade show active" id="breakfast" role="tabpanel"
                         aria-labelledby="breakfast-tab">
                         <div class="row">
-                            <div class="col-md-6">
-                                <div class="single_menu">
-                                    <img src="https://i.imgur.com/kbpceNv.jpg" alt="burger">
-                                    <div class="menu_content">
-                                        <h4>Chicken Burger <span>$24</span></h4>
+                            <div class="col-md-6 ">
+                                <div class="single_menu ">
+                                    <img src="images/chocolate_menu.png" class="img-fluid" alt="choco">
+                                    <div class="menu_content bg-light">
+                                        <h4>Sweats <span>$15</span></h4>
                                         <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
                                             saepe facilis.</p>
                                     </div>
                                 </div>
                                 <div class="single_menu">
-                                    <img src="https://i.imgur.com/lYKUORL.jpg" alt="black coffee">
-                                    <div class="menu_content">
-                                        <h4>Black coffee <span>$20</span></h4>
+                                    <img src="images/santa.jpg" alt="santa">
+                                    <div class="menu_content bg-light">
+                                        <h4>Santa chocolate <span>$20</span></h4>
                                         <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
                                             saepe facilis.</p>
                                     </div>
                                 </div>
                                 <div class="single_menu">
-                                    <img src="https://i.imgur.com/AXAHrf6.jpg" alt="fried rice">
-                                    <div class="menu_content">
-                                        <h4>Fried Rice <span>$45</span></h4>
+                                    <img src="images/choco_mous.jpg" alt="choco mousse">
+                                    <div class="menu_content bg-light">
+                                        <h4>choco mousse <span>$45</span></h4>
                                         <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
                                             saepe facilis.</p>
                                     </div>
                                 </div>
                                 <div class="single_menu">
-                                    <img src="https://i.imgur.com/YkDi8Nb.jpg" alt="meat">
-                                    <div class="menu_content">
-                                        <h4>meat <span>$24</span></h4>
+                                    <img src="images/brownies.jpg" alt="brownies">
+                                    <div class="menu_content bg-light">
+                                        <h4>Brownies <span>$24</span></h4>
                                         <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
                                             saepe facilis.</p>
                                     </div>
@@ -126,33 +216,33 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="single_menu">
-                                    <img src="https://i.imgur.com/TAq7lDR.jpg" alt="burger">
-                                    <div class="menu_content">
-                                        <h4>Chicken Burger <span>$24</span></h4>
+                                    <img src="images/icecream.jpg" alt="Icecream">
+                                    <div class="menu_content bg-light">
+                                        <h4>Choco Icecream <span>$15</span></h4>
                                         <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
                                             saepe facilis.</p>
                                     </div>
                                 </div>
                                 <div class="single_menu">
-                                    <img src="https://i.imgur.com/lYKUORL.jpg" alt="black coffee">
-                                    <div class="menu_content">
-                                        <h4>Black coffee <span>$20</span></h4>
+                                    <img src="images/cupcakes.png" alt="cupcakes">
+                                    <div class="menu_content bg-light">
+                                        <h4>Cupcakes<span>$20</span></h4>
                                         <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
                                             saepe facilis.</p>
                                     </div>
                                 </div>
                                 <div class="single_menu">
-                                    <img src="https://i.imgur.com/AXAHrf6.jpg" alt="fried rice">
-                                    <div class="menu_content">
-                                        <h4>Fried Rice <span>$45</span></h4>
+                                    <img src="images/choco_cake.jpg" alt="Choco cake">
+                                    <div class="menu_content bg-light">
+                                        <h4>Choco cake <span>$45</span></h4>
                                         <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
                                             saepe facilis.</p>
                                     </div>
                                 </div>
                                 <div class="single_menu">
-                                    <img src="https://i.imgur.com/YkDi8Nb.jpg" alt="meat">
-                                    <div class="menu_content">
-                                        <h4>meat <span>$24</span></h4>
+                                    <img src="images/soufle.jpg" alt="meat">
+                                    <div class="menu_content bg-light">
+                                        <h4>Chocolate soufle <span>$24</span></h4>
                                         <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
                                             saepe facilis.</p>
                                     </div>
@@ -165,7 +255,7 @@
                             <div class="col-md-6">
                                 <div class="single_menu">
                                     <img src="https://i.imgur.com/Aowufa1.jpg" alt="pizza">
-                                    <div class="menu_content">
+                                    <div class="menu_content bg-light">
                                         <h4>12" Pizza <span>$35</span></h4>
                                         <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
                                             saepe facilis.</p>
@@ -173,7 +263,7 @@
                                 </div>
                                 <div class="single_menu">
                                     <img src="https://i.imgur.com/DJlmZDJ.jpg" alt="salad">
-                                    <div class="menu_content">
+                                    <div class="menu_content bg-light">
                                         <h4>Salad <span>$20</span></h4>
                                         <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
                                             saepe facilis.</p>
@@ -181,7 +271,7 @@
                                 </div>
                                 <div class="single_menu">
                                     <img src="https://i.imgur.com/knnQm7e.jpg" alt="green tea">
-                                    <div class="menu_content">
+                                    <div class="menu_content bg-light">
                                         <h4>green tea <span>$15</span></h4>
                                         <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
                                             saepe facilis.</p>
@@ -189,7 +279,7 @@
                                 </div>
                                 <div class="single_menu">
                                     <img src="https://i.imgur.com/YkDi8Nb.jpg" alt="meat">
-                                    <div class="menu_content">
+                                    <div class="menu_content bg-light">
                                         <h4>meat <span>$24</span></h4>
                                         <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
                                             saepe facilis.</p>
@@ -199,7 +289,7 @@
                             <div class="col-md-6">
                                 <div class="single_menu">
                                     <img src="https://i.imgur.com/kbpceNv.jpg" alt="burger">
-                                    <div class="menu_content">
+                                    <div class="menu_content bg-light">
                                         <h4>Chicken Burger <span>$24</span></h4>
                                         <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
                                             saepe facilis.</p>
@@ -207,23 +297,23 @@
                                 </div>
                                 <div class="single_menu">
                                     <img src="https://i.imgur.com/lYKUORL.jpg" alt="black coffee">
-                                    <div class="menu_content">
+                                    <div class="menu_content bg-light">
                                         <h4>Black coffee <span>$20</span></h4>
                                         <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
                                             saepe facilis.</p>
                                     </div>
                                 </div>
                                 <div class="single_menu">
-                                    <img src="https://i.imgur.com/AXAHrf6.jpg" alt="fried rice">
-                                    <div class="menu_content">
-                                        <h4>Fried Rice <span>$45</span></h4>
+                                    <img src="images/soufle.jpg" alt="chocolate soufle">
+                                    <div class="menu_content bg-light">
+                                        <h4>chocolate soufle <span>$45</span></h4>
                                         <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
                                             saepe facilis.</p>
                                     </div>
                                 </div>
                                 <div class="single_menu">
                                     <img src="https://i.imgur.com/YkDi8Nb.jpg" alt="meat">
-                                    <div class="menu_content">
+                                    <div class="menu_content bg-light">
                                         <h4>meat <span>$24</span></h4>
                                         <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
                                             saepe facilis.</p>
@@ -236,33 +326,33 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="single_menu">
-                                    <img src="https://i.imgur.com/kbpceNv.jpg" alt="burger">
-                                    <div class="menu_content">
-                                        <h4>Chicken Burger <span>$24</span></h4>
+                                    <img src="images/santa.jpg" alt="santa">
+                                    <div class="menu_content bg-light">
+                                        <h4>Santa chocolate <span>$24</span></h4>
                                         <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
                                             saepe facilis.</p>
                                     </div>
                                 </div>
                                 <div class="single_menu">
-                                    <img src="https://i.imgur.com/lYKUORL.jpg" alt="black coffee">
-                                    <div class="menu_content">
-                                        <h4>Black coffee <span>$20</span></h4>
+                                    <img src="images/Christmas-Chocolate-Log-ww-15k.jpg" alt="Christmass log">
+                                    <div class="menu_content bg-light">
+                                        <h4>Christmass log <span>$20</span></h4>
                                         <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
                                             saepe facilis.</p>
                                     </div>
                                 </div>
                                 <div class="single_menu">
-                                    <img src="https://i.imgur.com/AXAHrf6.jpg" alt="fried rice">
-                                    <div class="menu_content">
-                                        <h4>Fried Rice <span>$45</span></h4>
+                                    <img src="images/Christmas-House.jpg" alt="Christmas-House">
+                                    <div class="menu_content bg-light">
+                                        <h4>Christmas House <span>$45</span></h4>
                                         <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
                                             saepe facilis.</p>
                                     </div>
                                 </div>
                                 <div class="single_menu">
-                                    <img src="https://i.imgur.com/YkDi8Nb.jpg" alt="meat">
-                                    <div class="menu_content">
-                                        <h4>meat <span>$24</span></h4>
+                                    <img src="images/french-christmas-macarons.jpeg" alt="french-christmas-macarons">
+                                    <div class="menu_content bg-light">
+                                        <h4>Christmas Macarons <span>$24</span></h4>
                                         <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
                                             saepe facilis.</p>
                                     </div>
@@ -270,24 +360,24 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="single_menu">
-                                    <img src="https://i.imgur.com/kbpceNv.jpg" alt="burger">
-                                    <div class="menu_content">
-                                        <h4>Chicken Burger <span>$24</span></h4>
+                                    <img src="images/Strawberry_Reindeer.jpg" alt="Strawberry Reindeer">
+                                    <div class="menu_content bg-light">
+                                        <h4>Strawberry Reindeer <span>$24</span></h4>
                                         <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
                                             saepe facilis.</p>
                                     </div>
                                 </div>
                                 <div class="single_menu">
-                                    <img src="https://i.imgur.com/lYKUORL.jpg" alt="black coffee">
-                                    <div class="menu_content">
-                                        <h4>Black coffee <span>$20</span></h4>
+                                    <img src="images/Christmas_cookies.jpg" alt="Christmas_cookies">
+                                    <div class="menu_content bg-light">
+                                        <h4>Christmas cookies <span>$20</span></h4>
                                         <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
                                             saepe facilis.</p>
                                     </div>
                                 </div>
                                 <div class="single_menu">
                                     <img src="https://i.imgur.com/AXAHrf6.jpg" alt="fried rice">
-                                    <div class="menu_content">
+                                    <div class="menu_content bg-light">
                                         <h4>Fried Rice <span>$45</span></h4>
                                         <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
                                             saepe facilis.</p>
@@ -295,7 +385,7 @@
                                 </div>
                                 <div class="single_menu">
                                     <img src="https://i.imgur.com/YkDi8Nb.jpg" alt="meat">
-                                    <div class="menu_content">
+                                    <div class="menu_content bg-light">
                                         <h4>meat <span>$24</span></h4>
                                         <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
                                             saepe facilis.</p>
@@ -305,7 +395,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" class=" menu_btn btn btn-danger">view more</a>
+                <a data-toggle="modal" data-target="#ReserveSModal" class=" menu_btn btn btn-danger">ORDER NOW</a>
             </div>
         </div>
     </section>
@@ -363,6 +453,7 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+
 
 </body>
 

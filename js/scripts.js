@@ -1,4 +1,4 @@
-$( document ).docready(function(){
+$( document ).ready(function(){
     $("#mycarousel").carousel( { interval: 2000 } );
     $("#carousel-pause").onclick(function(){
         $("#mycarousel").carousel('pause');
@@ -6,4 +6,4 @@ $( document ).docready(function(){
     $("#carousel-play").onclick(function(){
         $("#mycarousel").carousel('cycle');
     });
-});
+})
